@@ -1,15 +1,7 @@
 <template>
-  <div class="about">
+  <main class="h-screen">
     <h1>This is an about page</h1>
-  </div>
+  </main>
 </template>
 
-<style lang="scss">
-.about {
-  @apply lg:min-h-screen lg:flex lg:items-center;
-
-  h1 {
-    @apply text-xl font-medium text-white;
-  }
-}
-</style>
+<style lang="scss"></style>

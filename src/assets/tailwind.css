@@ -8,9 +8,9 @@
     background: center no-repeat
       linear-gradient(
         350deg,
-        rgba(50, 11, 76, 1) 0%,
+        rgb(31, 6, 48) 0%,
         rgba(2, 0, 36, 1) 10%,
-        rgba(74, 17, 115, 1) 100%
+        rgb(28, 7, 43) 100%
       );
   }
 }
