@@ -1,12 +1,16 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+
+let brandState = {
+  title: "Nezie Studio",
+};
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Welcome!" />
+      <HelloWorld :msg="brandState.title" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
