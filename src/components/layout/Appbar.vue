@@ -61,7 +61,7 @@ let links = [
   }
 
   .blurred-nav {
-    @apply py-6 px-6 text-sm font-medium bg-secondary-900/40 backdrop-blur  w-full  border-b-2 border-secondary-500;
+    @apply py-6 px-6 text-sm font-medium bg-secondary-900/20 backdrop-blur  w-full  border-b-2 border-secondary-500;
   }
 }
 </style>

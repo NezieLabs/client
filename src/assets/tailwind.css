@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  #app {
+  #app,
+  body {
     color: #fff;
     background: center no-repeat
       linear-gradient(

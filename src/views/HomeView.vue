@@ -1,8 +1,10 @@
-<script setup></script>
+<script setup>
+import Hero from "../components/layout/Hero.vue";
+</script>
 
 <template>
   <main class="home">
-    <h1>Home Screen</h1>
+    <Hero />
   </main>
 </template>
 
