@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  #app {
+    color: #fff;
+    background: center no-repeat
+      linear-gradient(
+        350deg,
+        rgba(50, 11, 76, 1) 0%,
+        rgba(2, 0, 36, 1) 10%,
+        rgba(74, 17, 115, 1) 100%
+      );
+  }
+}
