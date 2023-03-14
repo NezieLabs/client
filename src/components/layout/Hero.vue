@@ -11,7 +11,9 @@
           Connected World.
         </p>
         <!-- TODO: Needs to be abstracted into classes -->
-        <button class="bg-secondary-500 hover:bg-secondary-400">
+        <button
+          class="bg-secondary-500 hover:hover:brightness-125 transition-opacity duration-300"
+        >
           Get in touch
         </button>
         <button class="text-secondary-500 font-bold hover:text-white mx-2">
@@ -39,16 +41,20 @@
     min-width: 50%;
 
     img {
-      @apply max-w-md;
+      @apply max-w-full h-full;
     }
   }
 
   div:first-child {
     h1 {
-      @apply text-3xl py-6;
+      @apply text-3xl py-6 text-secondary-100;
     }
 
     span {
+      p {
+        @apply text-gray-400;
+      }
+
       button {
         @apply p-3  my-5 rounded;
       }

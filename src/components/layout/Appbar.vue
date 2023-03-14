@@ -1,19 +1,32 @@
 <script setup>
 import useScroll from "@/hooks/useScroll.js";
+import { ArrowRightCircleIcon } from "@heroicons/vue/24/solid";
 
 const isScrolled = useScroll(0);
 
 let links = [
   {
-    name: "home",
+    name: "Home",
     route: "/",
   },
   {
-    name: "about",
+    name: "About",
     route: "/about",
   },
   {
-    name: "contact",
+    name: "Services",
+    route: "/services",
+  },
+  {
+    name: "Showcase",
+    route: "/showcase",
+  },
+  {
+    name: "Process",
+    route: "/Process",
+  },
+  {
+    name: "Contact",
     route: "/contact",
   },
 ];
@@ -23,16 +36,25 @@ let links = [
   <div class="relative">
     <nav :class="{ 'blurred-nav': isScrolled, nav: !isScrolled }">
       <div class="wrapper">
-        <a href="#">Nezie Studio</a>
         <ul>
+          <li class="text-xl">Nezie Studio</li>
           <li v-for="(link, index) in links" :key="index">
-            <RouterLink :to="link.route">
-              {{
-                link.name.charAt(0).toUpperCase() + link.name.slice(1)
-              }}</RouterLink
+            <RouterLink
+              class="text-md p-2 rounded hover:brightness-125 transition-opacity duration-300"
+              :class="{
+                'bg-secondary-500': $route.path === link.route,
+                'opacity-50 hover:opacity-100': $route.path !== link.route,
+              }"
+              :to="link.route"
             >
+              {{ link.name.charAt(0).toUpperCase() + link.name.slice(1) }}
+            </RouterLink>
           </li>
         </ul>
+        <button class="text-md">
+          Digital Products
+          <ArrowRightCircleIcon class="h6 w-6 inline" />
+        </button>
       </div>
     </nav>
   </div>
@@ -45,7 +67,7 @@ let links = [
 
   .blurred-nav,
   .nav {
-    @apply py-6 px-6 text-sm font-medium w-full;
+    @apply py-4 text-sm font-medium w-full;
     position: fixed;
     top: 0;
     left: 0;
@@ -55,13 +77,13 @@ let links = [
       @apply container m-auto flex justify-between;
 
       ul {
-        @apply flex space-x-5;
+        @apply flex items-center space-x-5;
       }
     }
   }
 
   .blurred-nav {
-    @apply py-6 px-6 text-sm font-medium bg-secondary-900/20 backdrop-blur  w-full  border-b-2 border-secondary-500;
+    @apply text-sm font-medium bg-secondary-900/10 backdrop-blur  w-full  border-b border-secondary-500;
   }
 }
 </style>
