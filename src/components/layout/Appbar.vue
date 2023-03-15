@@ -51,9 +51,9 @@ let links = [
             </RouterLink>
           </li>
         </ul>
-        <button class="text-md">
+        <button class="text-md text-secondary-500">
           Digital Products
-          <ArrowRightCircleIcon class="h6 w-6 inline" />
+          <ArrowRightCircleIcon class="h6 w-6 inline text-secondary-500" />
         </button>
       </div>
     </nav>

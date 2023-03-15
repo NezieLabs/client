@@ -3,17 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  #app,
-  body {
-    color: #fff;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background: center no-repeat
-      linear-gradient(
-        350deg,
-        rgb(25, 6, 36) 0%,
-        rgb(67, 0, 101) 0%,
-        rgb(17, 3, 28) 80%
-      );
-  }
+}
+#app {
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: center no-repeat
+    linear-gradient(
+      5deg,
+      rgb(25, 6, 36) 0%,
+      rgb(228, 174, 255) 0%,
+      rgb(17, 3, 28) 80%
+    );
+}
+
+body {
+  background-color: rgb(17, 3, 28);
 }
